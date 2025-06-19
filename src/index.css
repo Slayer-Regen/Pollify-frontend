@@ -1,0 +1,27 @@
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+  }
+  
+  body.dark {
+    --bg: #1e2a38;           /* Soft navy blue */
+    --text: #f0f0f0;         /* Light grey-white text */
+    --card: #273649;         /* Slightly lighter for cards */
+    --button-bg: #3c4f65;  
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: all 0.3s ease;
+  }
+  
+  /* You can also override Bootstrap if needed */
+  .card,
+  .btn,
+  input,
+  textarea {
+    background-color: var(--bg) !important;
+    color: var(--text) !important;
+    border-color: var(--text) !important;
+  }
